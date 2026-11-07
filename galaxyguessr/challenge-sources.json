@@ -1,0 +1,292 @@
+{
+  "public/challenges/mercury.jpg": {
+    "id": "PIA13823",
+    "title": "MESSENGER Explores Mercury - In Color",
+    "url": "https://images-assets.nasa.gov/image/PIA13823/PIA13823~medium.jpg",
+    "description": "MESSENGER Explores Mercury - In Color",
+    "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+    "download": "https://images-assets.nasa.gov/image/PIA13823/PIA13823~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA13823",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/jupiter.jpg": {
+    "id": "PIA01370",
+    "title": "Jupiter Great Red Spot",
+    "url": "https://images-assets.nasa.gov/image/PIA01370/PIA01370~small.jpg",
+    "description": "Jupiter Great Red Spot",
+    "credit": "NASA/JPL",
+    "download": "https://images-assets.nasa.gov/image/PIA01370/PIA01370~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA01370",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/saturn.jpg": {
+    "id": "PIA06193",
+    "title": "The Greatest Saturn Portrait ...Yet",
+    "url": "https://images-assets.nasa.gov/image/PIA06193/PIA06193~medium.jpg",
+    "description": "While cruising around Saturn in early October 2004, Cassini captured a series of images that have been composed into the largest, most detailed, global natural color view of Saturn and its rings ever made.  This grand mosaic consists of 126 images acquired in a tile-like fashion, covering one end of Saturn's rings to the other and the entire planet in between. The images were taken over the course of two hours on Oct. 6, 2004, while Cassini was approximately 6.3 million kilometers (3.9 million miles) from Saturn. Since the view seen by Cassini during this time changed very little, no re-projection or alteration of any of the images was necessary.  Three images (red, green and blue) were taken of each of 42 locations, or \"footprints,\" across the planet. The full color footprints were put together to produce a mosaic that is 8,888 pixels across and 4,544 pixels tall.  The smallest features seen here are 38 kilometers (24 miles) across. Many of Saturn's splendid features noted previously in single frames taken by Cassini are visible in this one detailed, all-encompassing view: subtle color variations across the rings, the thread-like F ring, ring shadows cast against the blue northern hemisphere, the planet's shadow making its way across the rings to the left, and blue-grey storms in Saturn's southern hemisphere to the right. Tiny Mimas and even smaller Janus are both faintly visible at the lower left.  The Sun-Saturn-Cassini, or phase, angle at the time was 72 degrees; hence, the partial illumination of Saturn in this portrait. Later in the mission, when the spacecraft's trajectory takes it far from Saturn and also into the direction of the Sun, Cassini will be able to look back and view Saturn and its rings in a more fully-illuminated geometry.   http://photojournal.jpl.nasa.gov/catalog/PIA06193",
+    "credit": "NASA/JPL/Space Science Institute",
+    "download": "https://images-assets.nasa.gov/image/PIA06193/PIA06193~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA06193",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/io.jpg": {
+    "id": "PIA00361",
+    "title": "Io Surface Deposits and Volcano",
+    "url": "https://images-assets.nasa.gov/image/PIA00361/PIA00361~thumb.jpg",
+    "description": "Io Surface Deposits and Volcano  http://photojournal.jpl.nasa.gov/catalog/PIA00361",
+    "credit": "NASA/JPL",
+    "download": "https://images-assets.nasa.gov/image/PIA00361/PIA00361~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA00361",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/enceladus.jpg": {
+    "id": "PIA11683",
+    "title": "Peaceful Portrait",
+    "url": "https://images-assets.nasa.gov/image/PIA11683/PIA11683~small.jpg",
+    "description": "NASA Cassini spacecraft captures this scene showing the bright crescent of Saturn moon Enceladus at top right. The center of the image reveals plumes of water ice spew out from fractures known as tiger stripes near the south pole of the moon.",
+    "credit": "NASA/JPL/Space Science Institute",
+    "download": "https://images-assets.nasa.gov/image/PIA11683/PIA11683~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA11683",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/ceres.jpg": {
+    "id": "PIA20350",
+    "title": "Occator Crater and Ceres Brightest Spots",
+    "url": "https://images-assets.nasa.gov/image/PIA20350/PIA20350~medium.jpg",
+    "description": "NASA Dawn spacecraft captured Occator Crater, containing the brightest area on Ceres; this closeup reveals a dome in a smooth-walled pit in the bright center of the crater.",
+    "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA/PSI",
+    "download": "https://images-assets.nasa.gov/image/PIA20350/PIA20350~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA20350",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/pluto.jpg": {
+    "id": "PIA19841",
+    "title": "Frozen Plains in the Heart of Pluto Heart",
+    "url": "https://images-assets.nasa.gov/image/PIA19841/PIA19841~small.jpg",
+    "description": "At center left of Pluto vast heart-shaped feature \"Tombaugh Regio\" --  lies a vast, craterless plain that appears to be no more than 100 million years old, and is possibly still being shaped by geologic processes as seen by NASA New Horizons spacecraft. This frozen region is north of Pluto's icy mountains and has been informally named Sputnik Planum (Sputnik Plain), after Earth's first artificial satellite. The surface appears to be divided into irregularly-shaped segments that are ringed by narrow troughs. Features that appear to be groups of mounds and fields of small pits are also visible. This image was acquired by the Long Range Reconnaissance Imager (LORRI) on July 14 from a distance of 48,000 miles (77,000 kilometers). Features as small as one-half mile (1 kilometer) across are visible. The blocky appearance of some features is due to compression of the image.  http://photojournal.jpl.nasa.gov/catalog/PIA19841",
+    "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+    "download": "https://images-assets.nasa.gov/image/PIA19841/PIA19841~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA19841",
+    "processing": "Resized and JPEG compressed; cropped to remove identifying annotation; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/vesta.jpg": {
+    "id": "PIA14778",
+    "title": "A Full-Frame View of Vesta",
+    "url": "https://images-assets.nasa.gov/image/PIA14778/PIA14778~small.jpg",
+    "description": "This full-frame view of asteroid Vesta was obtained by NASA Dawn spacecraft with its framing camera on July, 24 2011. This image was taken through the camera clear filter. The image has a resolution of about 485 meters per pixel.",
+    "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA",
+    "download": "https://images-assets.nasa.gov/image/PIA14778/PIA14778~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA14778",
+    "processing": "Resized and JPEG compressed; cropped to remove identifying annotation; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/bennu.jpg": {
+    "id": "2019-02-25_regolith_image_compilation",
+    "title": "A Region of Bennu\u2019s Northern Hemisphere Close Up",
+    "url": "https://images-assets.nasa.gov/image/2019-02-25_regolith_image_compilation/2019-02-25_regolith_image_compilation~medium.jpg",
+    "description": "This trio of images acquired by NASA\u2019s OSIRIS-REx spacecraft shows a wide shot and two close-ups of a region in asteroid Bennu\u2019s northern hemisphere. The wide-angle image (left), obtained by the spacecraft\u2019s MapCam camera, shows a 590-foot (180-meter) wide area with many rocks, including some large boulders, and a \u201cpond\u201d of regolith that is mostly devoid of large rocks. The two closer images, obtained by the high-resolution PolyCam camera, show details of areas in the MapCam image, specifically a 50-foot (15 meter) boulder (top) and the regolith pond (bottom). The PolyCam frames are 101 feet (31 meters) across and the boulder depicted is approximately the same size as a humpback whale.  The images were taken on February 25 while the spacecraft was in orbit around Bennu, approximately 1.1 miles (1.8 km) from the asteroid\u2019s surface. The observation plan for this day provided for one MapCam and two PolyCam images every 10 minutes, allowing for this combination of context and detail of Bennu\u2019s surface.  Credit:  NASA/Goddard/University of Arizona",
+    "credit": "GSFC",
+    "download": "https://images-assets.nasa.gov/image/2019-02-25_regolith_image_compilation/2019-02-25_regolith_image_compilation~medium.jpg",
+    "source": "https://images.nasa.gov/details/2019-02-25_regolith_image_compilation",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/eros.jpg": {
+    "id": "PIA02900",
+    "title": "Back in the Saddle Again",
+    "url": "https://images-assets.nasa.gov/image/PIA02900/PIA02900~thumb.jpg",
+    "description": "Again and again, NEAR Shoemaker's imager is being directed at the \"saddle region\" of Eros, to observe this feature under the widest variety of lighting conditions. This image of the saddle was taken March 22, 2000, from a range of 208 kilometers (129 miles). Generically speaking, a saddle is a low ridge connecting two mountains. The definition does not include an explanation for the origin of the curvature. Similarly, on Eros, the term \"saddle region\" is a description of a physical feature and doesn't imply any particular origin.  Perhaps the most frequently asked question about Eros' surface is, \"What is the origin of the saddle?\" Was it formed as a spallation scar resulting from the impact that created the large 5.5-kilometer (3.4-mile) diameter crater on the opposite side of the asteroid? To determine its origin will take time. Right now, the southern part of the feature is still in shadow. Over the next few months, as the Sun moves south in Eros' sky, the whole saddle will become visible. As NEAR Shoemaker continues to take more and more pictures of the saddle region, we will be better able to answer key questions about this feature.  http://photojournal.jpl.nasa.gov/catalog/PIA02900",
+    "credit": "NASA/JPL/JHUAPL",
+    "download": "https://images-assets.nasa.gov/image/PIA02900/PIA02900~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA02900",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/sun.jpg": {
+    "id": "PIA11237",
+    "title": "Churning Prominence",
+    "url": "https://images-assets.nasa.gov/image/PIA11237/PIA11237~medium.jpg",
+    "description": "On Jan. 23-24, 2017, NASA Solar Dynamics Observatory watched as a solar prominence rose up along the edge of the sun and twisted and churned for about two days before falling apart. The dynamic action was generated by competing magnetic forces.  The images were taken in a wavelength extreme ultraviolet light that observes activity close to the solar surface, perfect for capturing prominences, which are notoriously unstable clouds of plasma suspended above the sun.  Movies are available at http://photojournal.jpl.nasa.gov/catalog/PIA11237",
+    "credit": "NASA/GSFC/Solar Dynamics Observatory",
+    "download": "https://images-assets.nasa.gov/image/PIA11237/PIA11237~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA11237",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/white-dwarf.jpg": {
+    "id": "PIA03652",
+    "title": "Comet Bites the Dust Around Dead Star  Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA03652/PIA03652~medium.jpg",
+    "description": "This artist concept illustrates a comet being torn to shreds around a dead star, or white dwarf, called G29-38. NASA Spitzer Space Telescope observed a cloud of dust around this white dwarf that may have been generated from comet disruption.",
+    "credit": "Main image: NASA/JPL-Caltech<br />Graph: NASA/JPL-Caltech/GSFC",
+    "download": "https://images-assets.nasa.gov/image/PIA03652/PIA03652~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA03652",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/red-supergiant.jpg": {
+    "id": "PIA16680",
+    "title": "Betelgeuse Enigmatic Environment",
+    "url": "https://images-assets.nasa.gov/image/PIA16680/PIA16680~thumb.jpg",
+    "description": "The red supergiant star Betelgeuse center is surrounded by a clumpy envelope of material in its immediate vicinity in this view from the Herschel Space Observatory.",
+    "credit": "ESA/Herschel/PACS/L. Decin et al.",
+    "download": "https://images-assets.nasa.gov/image/PIA16680/PIA16680~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA16680",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/protostar.jpg": {
+    "id": "PIA16690",
+    "title": "Protostar LRLL 54361",
+    "url": "https://images-assets.nasa.gov/image/PIA16690/PIA16690~medium.jpg",
+    "description": "NASA Spitzer and Hubble space telescopes have teamed up to uncover a mysterious infant star that behaves like a police strobe light.",
+    "credit": "NASA/ESA/JPL-Caltech/STScI/NOAO/University of Arizona/ Max Planck Institute for Astronomy/University of Massachusetts, Amherst",
+    "download": "https://images-assets.nasa.gov/image/PIA16690/PIA16690~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA16690",
+    "processing": "Resized and JPEG compressed; cropped to remove identifying annotation; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/red-dwarf.jpg": {
+    "id": "PIA21473",
+    "title": "Flaring Red Dwarf Star (Illustration)",
+    "url": "https://images-assets.nasa.gov/image/PIA21473/PIA21473~medium.jpg",
+    "description": "This illustration shows a red dwarf star orbited by a hypothetical exoplanet. Red dwarfs tend to be magnetically active, displaying gigantic arcing prominences and a wealth of dark sunspots. Red dwarfs also erupt with intense flares that could strip a nearby planet's atmosphere over time, or make the surface inhospitable to life as we know it.  By mining data from the Galaxy Evolution Explorer (GALEX) spacecraft, a team of astronomers identified dozens of flares at a range of durations and strengths. The team measured events with less total energy than many previously detected flares from red dwarfs. This is important because, although individually less energetic and therefore less hostile to life, smaller flares might be much more frequent and add up over time to produce a cumulative effect on an orbiting planet.   https://photojournal.jpl.nasa.gov/catalog/PIA21473",
+    "credit": "NASA/ESA/STScI/G. Bacon",
+    "download": "https://images-assets.nasa.gov/image/PIA21473/PIA21473~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA21473",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/halley.jpg": {
+    "id": "PIA17485",
+    "title": "Comet Halley",
+    "url": "https://images-assets.nasa.gov/image/PIA17485/PIA17485~small.jpg",
+    "description": "In 1986, the European spacecraft Giotto became one of the first spacecraft ever to encounter and photograph the nucleus of a comet, passing and imaging Halley nucleus as it receded from the sun.",
+    "credit": "NASA/ESA/Giotto Project",
+    "download": "https://images-assets.nasa.gov/image/PIA17485/PIA17485~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA17485",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/67p.jpg": {
+    "id": "PIA18423",
+    "title": "Comet 67P from 1,200 Miles Away",
+    "url": "https://images-assets.nasa.gov/image/PIA18423/PIA18423~thumb.jpg",
+    "description": "This view from the OSIRIS instrument onboard ESA Rosetta spacecraft shows the nucleus of comet 67P/Churyumov-Gerasimernko from a distance of 1,210 miles 1950 kilometers.",
+    "credit": "Copyright: ESA/Rosetta/MPS for OSIRIS Team MPS/UPD/LAM/IAA/SSO/INTA/UPM/DASP/IDA",
+    "download": "https://images-assets.nasa.gov/image/PIA18423/PIA18423~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA18423",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/tempel.jpg": {
+    "id": "PIA02119",
+    "title": "Tempel 1 Nucleus",
+    "url": "https://images-assets.nasa.gov/image/PIA02119/PIA02119~thumb.jpg",
+    "description": "This image from NASA TV shows the nucleus of comet Tempel 1 from Deep Impact flyby high-resolution imager.",
+    "credit": "NASA/JPL-Caltech/UMD",
+    "download": "https://images-assets.nasa.gov/image/PIA02119/PIA02119~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA02119",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/wild.jpg": {
+    "id": "PIA05571",
+    "title": "Comet Wild 2 Up Close and Personal",
+    "url": "https://images-assets.nasa.gov/image/PIA05571/PIA05571~thumb.jpg",
+    "description": "On January 2, 2004 NASA's Stardust spacecraft made a close flyby of comet Wild 2 (pronounced \"Vilt-2\"). Among the equipment the spacecraft carried on board was a navigation camera. This is the 34th of the 72 images taken by Stardust's navigation camera during close encounter. The exposure time was 10 milliseconds. The two frames are actually of 1 single exposure. The frame on the left depicts the comet as the human eye would see it. The frame on the right depicts the same image but \"stretched\" so that the faint jets emanating from Wild 2 can be plainly seen. Comet Wild 2 is about five kilometers (3.1 miles) in diameter.   http://photojournal.jpl.nasa.gov/catalog/PIA05571",
+    "credit": "NASA/JPL-Caltech",
+    "download": "https://images-assets.nasa.gov/image/PIA05571/PIA05571~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA05571",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/hartley.jpg": {
+    "id": "PIA13579",
+    "title": "Almost There at Comet Hartley 2",
+    "url": "https://images-assets.nasa.gov/image/PIA13579/PIA13579~thumb.jpg",
+    "description": "This close-up view of comet Hartley 2 was taken as NASA EPOXI mission approached the comet at 6:59 a.m. PDT 9:59 a.m. EDT.",
+    "credit": "NASA/JPL-Caltech/UMD",
+    "download": "https://images-assets.nasa.gov/image/PIA13579/PIA13579~thumb.jpg",
+    "source": "https://images.nasa.gov/details/PIA13579",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/pulsar.jpg": {
+    "id": "9905980",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/9905980/9905980~medium.jpg",
+    "description": "After barely 2 months in space, the Chandra X-Ray Observatory (CXO) took this sturning image of the Crab Nebula, the spectacular remains of a stellar explosion, revealing something never seen before, a brilliant ring around the nebula's heart. The image shows the central pulsar surrounded by tilted rings of high-energy particles that appear to have been flung outward over a distance of more than a light-year from the pulsar. Perpendicular to the rings, jet-like structures produced by high-energy particles blast away from the pulsar. Hubble Space Telescope images have shown moving knots and wisps around the neutron star, and previous x-ray images have shown the outer parts of the jet and hinted at the ring structure. With CXO's exceptional resolution, the jet can be traced all the way in to the neutron star, and the ring pattern clearly appears. The image was made with CXO's Advanced Charge-Coupled Device (CCD) Imaging Spectrometer (ACIS) and High Energy Transmission Grating. The Crab Nebula, easily the most intensively studied object beyond our solar system, has been observed using virtually every astronomical instrument that could see that part of the sky",
+    "credit": "MSFC",
+    "download": "https://images-assets.nasa.gov/image/9905980/9905980~medium.jpg",
+    "source": "https://images.nasa.gov/details/9905980",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/supernova.jpg": {
+    "id": "PIA03519",
+    "title": "Cassiopeia A: Death Becomes Her",
+    "url": "https://images-assets.nasa.gov/image/PIA03519/PIA03519~medium.jpg",
+    "description": "This false-color image from three of NASA Great Observatories provides one example of a star that died in a fiery supernova blast. Called Cassiopeia A, this supernova remnant is located 10,000 light-years away in the constellation Cassiopeia.",
+    "credit": "NASA/JPL-Caltech/STScI/CXC/SAO<br /> Animation: NASA/JPL-Caltech/Univ. of Ariz./STScI/CXC/SAO ",
+    "download": "https://images-assets.nasa.gov/image/PIA03519/PIA03519~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA03519",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/nebula.jpg": {
+    "id": "PIA07902",
+    "title": "Planetary Nebula NGC 7293 also Known as the Helix Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA07902/PIA07902~medium.jpg",
+    "description": "This ultraviolet image from NASA Galaxy Evolution Explorer is of the planetary nebula NGC 7293 also known as the Helix Nebula. It is the nearest example of what happens to a star, like our own Sun, as it approaches the end of its life when it runs out of fuel, expels gas outward and evolves into a much hotter, smaller and denser white dwarf star.  http://photojournal.jpl.nasa.gov/catalog/PIA07902",
+    "credit": "NASA/JPL-Caltech/SSC",
+    "download": "https://images-assets.nasa.gov/image/PIA07902/PIA07902~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA07902",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/lens.jpg": {
+    "id": "GSFC_20171208_Archive_e000791",
+    "title": "Hubble Sees A Smiling Lens",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000791/GSFC_20171208_Archive_e000791~small.jpg",
+    "description": "In the center of this image, taken with the NASA/ESA Hubble Space Telescope, is the galaxy cluster SDSS J1038+4849 \u2014 and it seems to be smiling.  You can make out its two orange eyes and white button nose. In the case of this \u201chappy face\u201d, the two eyes are very bright galaxies and the misleading smile lines are actually arcs caused by an effect known as strong gravitational lensing.  Galaxy clusters are the most massive structures in the Universe and exert such a powerful gravitational pull that they warp the spacetime around them and act as cosmic lenses which can magnify, distort and bend the light behind them. This phenomenon, crucial to many of Hubble\u2019s discoveries, can be explained by Einstein\u2019s theory of general relativity.  In this special case of gravitational lensing, a ring \u2014 known as an Einstein Ring \u2014 is produced from this bending of light, a consequence of the exact and symmetrical alignment of the source, lens and observer and resulting in the ring-like structure we see here.  Hubble has provided astronomers with the tools to probe these massive galaxies and model their lensing effects, allowing us to peer further into the early Universe than ever before. This object was studied by Hubble\u2019s Wide Field and Planetary Camera 2 (WFPC2) and Wide Field Camera 3 (WFC3) as part of a survey of strong lenses.  A version of this image was entered into the Hubble\u2019s Hidden Treasures image processing competition by contestant Judy Schmidt.  Image Credit: NASA/ESA ",
+    "credit": "GSFC",
+    "download": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000791/GSFC_20171208_Archive_e000791~small.jpg",
+    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000791",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/andromeda.jpg": {
+    "id": "PIA04921",
+    "title": "Andromeda Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg",
+    "description": "This image is from NASA Galaxy Evolution Explorer is an observation of the large galaxy in Andromeda, Messier 31. The Andromeda galaxy is the most massive in the local group of galaxies that includes our Milky Way.",
+    "credit": "NASA/JPL/California Institute of Technology",
+    "download": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA04921",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/whirlpool.jpg": {
+    "id": "PIA04230",
+    "title": "Whirlpool Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA04230/PIA04230~small.jpg",
+    "description": "The image from NASA Hubble Telescope shows spiral arms and dust clouds in the nearby Whirlpool galaxy. Visible starlight and light from the emission of glowing hydrogen is seen, which is associated with the most luminous young stars in the spiral arms.",
+    "credit": "NASA and The Hubble Heritage Team STScI/AURA Acknowledgement: N. Scoville Caltech and T. Rector NOAO",
+    "download": "https://images-assets.nasa.gov/image/PIA04230/PIA04230~small.jpg",
+    "source": "https://images.nasa.gov/details/PIA04230",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/sombrero.jpg": {
+    "id": "PIA15226",
+    "title": "Hubble Spies Spectacular Sombrero",
+    "url": "https://images-assets.nasa.gov/image/PIA15226/PIA15226~medium.jpg",
+    "description": "Lying at the southern edge of the rich Virgo cluster of galaxies, Messier 104, also called the Sombrero galaxy, is one of the most famous objects in the sky in this image from NASA Hubble Space Telescope.",
+    "credit": "NASA/STScI/AURA",
+    "download": "https://images-assets.nasa.gov/image/PIA15226/PIA15226~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA15226",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/triangulum.jpg": {
+    "id": "PIA11969",
+    "title": "M33: A Close Neighbor Reveals its True Size and Splendor 3-color composite",
+    "url": "https://images-assets.nasa.gov/image/PIA11969/PIA11969~medium.jpg",
+    "description": "One of our closest galactic neighbors shows its awesome beauty in this new image from NASA Spitzer Space Telescope. M33, also known as the Triangulum Galaxy, is a member of what known as our Local Group of galaxies.",
+    "credit": "NASA/JPL-Caltech/Univ. of Ariz.",
+    "download": "https://images-assets.nasa.gov/image/PIA11969/PIA11969~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA11969",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  },
+  "public/challenges/magellanic.jpg": {
+    "id": "PIA07136",
+    "title": "Our Chaotic Neighbor",
+    "url": "https://images-assets.nasa.gov/image/PIA07136/PIA07136~medium.jpg",
+    "description": "This vibrant image from NASA's Spitzer Space Telescope shows the Large Magellanic Cloud, a satellite galaxy to our own Milky Way galaxy.  The infrared image, a mosaic of more than 100,000 individual tiles, offers astronomers a unique chance to study the lifecycle of stars and dust in a single galaxy. Nearly one million objects are revealed for the first time in this Spitzer view, which represents about a 1,000-fold improvement in sensitivity over previous space-based missions. Most of the new objects are dusty stars of various ages populating the Large Magellanic Cloud; the rest are thought to be background galaxies.  The blue color in the picture, seen most prominently in the central bar, represents starlight from older stars. The chaotic, bright regions outside this bar are filled with hot, massive stars buried in thick blankets of dust. The red clouds contain cooler interstellar gas and molecular-sized dust grains illuminated by ambient starlight.  The Large Magellanic Cloud, located 160,000 light-years from Earth, is one of a handful of dwarf galaxies that orbit our own Milky Way. It is approximately one-third as wide as the Milky Way, and, if it could be seen in its entirety, would cover the same amount of sky as a grid of about 480 full moons. About one-third of the whole galaxy can be seen in the Spitzer image.  This picture is a composite of infrared light captured by Spitzer's infrared array camera. Light with wavelengths of 8 and 5.8 microns is red and orange: 4.5-micron light is green; and 3.6-micron light is blue.   http://photojournal.jpl.nasa.gov/catalog/PIA07136",
+    "credit": "NASA/JPL-Caltech/STScI",
+    "download": "https://images-assets.nasa.gov/image/PIA07136/PIA07136~medium.jpg",
+    "source": "https://images.nasa.gov/details/PIA07136",
+    "processing": "Resized and JPEG compressed; telescope colors may represent non-visible wavelengths."
+  }
+}

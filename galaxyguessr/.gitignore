@@ -8,3 +8,4 @@ dist/
 *.tsbuildinfo
 qa/
 tmp-assets/
+/.local/
