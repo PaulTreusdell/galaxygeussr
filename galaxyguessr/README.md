@@ -61,3 +61,9 @@ Committed assets are sufficient to run and build. To regenerate archive download
 Keyboard-operable navigation, guessing, image inspection, and globe rotation; focus-managed dialogs; visible focus styles; subtitles for narration; reduced-motion preferences; opt-in ambience. Images are compressed local assets, with independent object previews and on-demand 3D code.
 
 `npm test` covers category isolation, mixed coverage, choice uniqueness, separate assets, scoring, real SQLite-backed leaderboard aggregation, shared visibility, name collisions, anonymous privacy, mission ownership, malformed results, and duplicate submissions. `npm run build` includes TypeScript checking.
+
+## Explorer accounts
+
+Anyone can play. A username/password account is required to post leaderboard scores. Guests see a dismissible account dialog after a mission; registering or signing in preserves that completed mission so it can be posted immediately. Use the header to sign in or sign out. Existing guest leaderboard records are retained in storage but excluded from the account leaderboard.
+
+Local development applies SQL migrations automatically. Before deploying the updated Worker, apply `drizzle/0001_accounts.sql` to the hosted database after the original migration. Passwords are salted and hashed with PBKDF2-SHA256; session tokens are hashed in storage and use HttpOnly cookies (Secure on HTTPS). Sessions expire after 30 days. Authentication attempts are limited per username. Password reset is not implemented; no email is collected.
