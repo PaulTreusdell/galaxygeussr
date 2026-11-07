@@ -3,6 +3,13 @@
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 const root = new URL('../', import.meta.url)
+// Load local credentials without exposing them to the browser or overriding shell settings.
+let localEnv = ''
+try { localEnv = await readFile(new URL('.env', root), 'utf8') } catch (error) { if (error.code !== 'ENOENT') throw error }
+const { parseEnv } = await import('node:util')
+for (const [name, value] of Object.entries(parseEnv(localEnv))) {
+  if (process.env[name] === undefined) process.env[name] = value
+}
 const key = process.env.ELEVENLABS_API_KEY
 const voiceId = process.env.ELEVENLABS_VOICE_ID
 if (!key || !voiceId) {
@@ -27,7 +34,13 @@ for (const location of locations) {
         body: JSON.stringify({ text: clip.text, model_id: 'eleven_multilingual_v2', voice_settings: { stability: .6, similarity_boost: .75 } }),
         signal: AbortSignal.timeout(60000),
       })
-      if (!response.ok) throw new Error(`Narration generation failed for ${clip.id}: HTTP ${response.status}. Existing clips are retained; retry to resume.`)
+      if (!response.ok) {
+        const failure = await response.json().catch(() => ({}))
+        const detail = failure.detail
+        const reason = (typeof detail === 'string' ? detail : detail?.message) || 'No error details provided'
+        const safeReason = reason.replaceAll(key, '[redacted]')
+        throw new Error(`Narration generation failed for ${clip.id}: HTTP ${response.status}. ${safeReason} Existing clips are retained; retry to resume.`)
+      }
       await writeFile(dest, Buffer.from(await response.arrayBuffer()))
       console.log(`Generated ${clip.id}`)
     }

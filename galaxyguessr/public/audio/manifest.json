@@ -1,1 +1,26 @@
-{}
+{
+  "mars-clue-0": "/audio/mars-clue-0.mp3",
+  "mars-clue-1": "/audio/mars-clue-1.mp3",
+  "mars-clue-2": "/audio/mars-clue-2.mp3",
+  "mars-explanation": "/audio/mars-explanation.mp3",
+  "moon-clue-0": "/audio/moon-clue-0.mp3",
+  "moon-clue-1": "/audio/moon-clue-1.mp3",
+  "moon-clue-2": "/audio/moon-clue-2.mp3",
+  "moon-explanation": "/audio/moon-explanation.mp3",
+  "europa-clue-0": "/audio/europa-clue-0.mp3",
+  "europa-clue-1": "/audio/europa-clue-1.mp3",
+  "europa-clue-2": "/audio/europa-clue-2.mp3",
+  "europa-explanation": "/audio/europa-explanation.mp3",
+  "titan-clue-0": "/audio/titan-clue-0.mp3",
+  "titan-clue-1": "/audio/titan-clue-1.mp3",
+  "titan-clue-2": "/audio/titan-clue-2.mp3",
+  "titan-explanation": "/audio/titan-explanation.mp3",
+  "venus-clue-0": "/audio/venus-clue-0.mp3",
+  "venus-clue-1": "/audio/venus-clue-1.mp3",
+  "venus-clue-2": "/audio/venus-clue-2.mp3",
+  "venus-explanation": "/audio/venus-explanation.mp3",
+  "blackhole-clue-0": "/audio/blackhole-clue-0.mp3",
+  "blackhole-clue-1": "/audio/blackhole-clue-1.mp3",
+  "blackhole-clue-2": "/audio/blackhole-clue-2.mp3",
+  "blackhole-explanation": "/audio/blackhole-explanation.mp3"
+}
