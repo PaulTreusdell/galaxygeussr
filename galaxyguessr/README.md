@@ -23,7 +23,7 @@ A correct guess starts at 5,000 points. The opening clue is free; each of two ad
 
 All clues and explanations are available as visible text. Until static ElevenLabs clips are generated, the play controls use the browser's speech synthesis service when available. Device voices and network requirements vary by browser. Ambient sound is synthesized locally and opt-in. Audio is labeled truthfully in the UI.
 
-To generate the 24 static ElevenLabs clips, set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your local shell, then run:
+To generate the 24 static ElevenLabs clips, set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your local `.env` file or shell (Node.js 22 or newer), then run:
 
 ```sh
 npm run audio:generate
