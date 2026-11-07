@@ -1,0 +1,31 @@
+{
+  "public/panoramas/mars.jpg": {
+    "title": "Full-Circle Panorama Beside Namib Dune on Mars (PIA20284)",
+    "source": "https://science.nasa.gov/photojournal/full-circle-panorama-beside-namib-dune-on-mars/",
+    "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia20/pia20284/PIA20284.jpg?w=4096",
+    "credit": "NASA/JPL-Caltech/MSSS",
+    "captured": "2015-12-18",
+    "processing": "NASA white-balanced photographic mosaic covering 360 degrees horizontally. Approximate cylindrical-to-equirectangular resampling, diffuse edge extension for missing zenith/nadir and sky, resized to 3072x1536. Not a complete spherical photograph."
+  },
+  "public/panoramas/moon.jpg": {
+    "title": "Apollo 17 Landing Site, EVA 1 (JSC2007e045384)",
+    "source": "https://www.lpi.usra.edu/resources/apollopanoramas/pans/?pan=JSC2007e045384",
+    "download": "https://www.lpi.usra.edu/resources/apollopanoramas/images/preview/original/JSC2007e045384.jpg",
+    "credit": "NASA / Apollo 17 crew; Lunar and Planetary Institute archive",
+    "frames": "AS17-147-22493 through AS17-147-22521",
+    "processing": "Partial-vertical panoramic photographic mosaic, approximate cylindrical-to-equirectangular resampling with black sky and diffuse edge extension for unphotographed polar coverage, resized to 3072x1536. Camera calibration unavailable; projection is approximate."
+  },
+  "public/mars-globe.jpg": {
+    "title": "True-Color Image of Mars",
+    "source": "https://science.nasa.gov/asset/hubble/true-color-image-of-mars/",
+    "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/1999/02/STScI-01EVVFMSV6BVBE104YD8CMRFDB.tif?w=2000",
+    "credit": "Jim Bell (Cornell University), Justin Maki (JPL), Mike Wolff (Space Sciences Institute), and NASA",
+    "processing": "Compressed JPEG. CSS blends the original black background into the interface."
+  },
+  "simulated_panorama_assets": {
+    "files": ["public/panoramas/europa.jpg", "public/panoramas/titan.jpg", "public/panoramas/venus.jpg", "public/panoramas/blackhole.jpg"],
+    "credit": "AI-generated scientific artist impressions, created with the built-in image_gen tool",
+    "prompts": "image-prompts.json",
+    "limitations": "Illustrative terrain and lighting; not spacecraft photographs or physically calculated models."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "method": "Built-in image_gen tool",
+  "assets": {
+    "public/panoramas/europa.jpg": {
+      "prompt": "Use case: scientific-educational. Asset type: full spherical 360-degree equirectangular panoramic texture for an immersive astronomy game. Generate a 2:1 wide image, 2048x1024. Horizon exactly at middle height. Longitude wraps seamlessly left to right, zenith at top, nadir at bottom. High detail cinematic photorealistic scientific artist impression. No typography, no labels, no logo, no border, no interface, no people. View from the icy surface of Jupiter's moon Europa. Vast pale blue-white ice plain, rust brown cracks and fractured ridges, fine frost in foreground, black sky, Jupiter visible small low in sky. Muted cyan light, physically plausible barren ice. No liquid water visible, no vegetation, no buildings. Flat horizon. This is explicitly artistic reconstruction.",
+      "label": "Artistic simulation"
+    },
+    "public/panoramas/titan.jpg": {
+      "prompt": "Use case: scientific-educational. Asset type: full spherical 360-degree equirectangular panoramic texture for an immersive astronomy game. Generate a 2:1 wide image, 2048x1024. Horizon exactly at middle height. Longitude wraps seamlessly left to right, zenith at top, nadir at bottom. High detail cinematic photorealistic scientific artist impression. No typography, no labels, no logo, no border, no interface, no people. View from the surface of Saturn's moon Titan. Rocky water-ice pebbles and dark dunes by a still hydrocarbon lake, thick opaque amber-orange smoggy sky, extremely low contrast distant hills. No rings or Saturn visible through thick atmosphere. Dim diffuse light. Ground entire bottom half.",
+      "label": "Artistic simulation"
+    },
+    "public/panoramas/venus.jpg": {
+      "prompt": "Use case: scientific-educational. Asset type: full spherical 360-degree equirectangular panoramic texture for an immersive astronomy game. Generate a 2:1 wide image, 2048x1024. Horizon exactly at middle height. Longitude wraps seamlessly left to right, zenith at top, nadir at bottom. High detail cinematic photorealistic scientific artist impression. No typography, no labels, no logo, no border, no interface, no people. View from the rocky surface of Venus, crushed angular basalt stones in foreground, rolling rocky volcanic plains, extremely dense opaque yellow-orange atmosphere, diffuse dim orange lighting, no sun disc and no stars visible, no lava rivers or vegetation. Ground bottom half and hazy sky top half. Scientifically informed artist reconstruction.",
+      "label": "Artistic simulation"
+    },
+    "public/panoramas/blackhole.jpg": {
+      "prompt": "Use case: scientific-educational. Asset type: full spherical 360-degree equirectangular panoramic texture for an immersive astronomy game. Generate a 2:1 wide image, 2048x1024. Horizon exactly at middle height. Longitude wraps seamlessly left to right, zenith at top, nadir at bottom. High detail cinematic photorealistic scientific artist impression. No typography, no labels, no logo, no border, no interface, no people. A simulated spacecraft view from far outside the event horizon of a rotating black hole. Black circular shadow and bright gold-white accretion disc wrapping above and below by gravitational lensing, tiny distant starfield across full sky. Black hole centered along horizon toward right third, dramatic dark space. No cockpit, no spacecraft, no planets. Clear restrained realistic scientific visualization, not a colorful fantasy nebula.",
+      "label": "Artistic simulation"
+    }
+  }
+}
