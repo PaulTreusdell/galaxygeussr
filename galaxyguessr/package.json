@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build && node scripts/build-worker.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "tsx --test tests/game.test.ts tests/api.test.ts",
-    "audio:generate": "node scripts/generate-audio.mjs"
+    "audio:generate": "node scripts/generate-audio.mjs",
+    "build:vultr": "tsc -b && vite build && node scripts/build-node.mjs",
+    "start": "node dist/node/server.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.4.0",

@@ -33,9 +33,9 @@ The server creates missions, binds them to their explorer, validates five matchi
 
 ## Narration
 
-All clues and explanations are available as visible text. Until static ElevenLabs clips are generated, the play controls use the browser's speech synthesis service when available. Device voices and network requirements vary by browser. Ambient sound is synthesized locally and opt-in. Audio is labeled truthfully in the UI.
+All clues and explanations are available as visible text. The catalog includes 140 static ElevenLabs narration clips using the George voice. The play controls fall back to the browser's speech synthesis service if a clip cannot play. Device voices and network requirements vary by browser. Ambient sound is synthesized locally and opt-in. Audio is labeled truthfully in the UI.
 
-To optionally generate the expanded catalog's 140 static ElevenLabs clips, set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your local `.env` file or shell (Node.js 22 or newer), then run:
+To generate missing clips for the expanded catalog's 140 narration entries, set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in your local `.env` file or shell (Node.js 22 or newer), then run:
 
 ```sh
 npm run audio:generate
