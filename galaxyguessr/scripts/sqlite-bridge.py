@@ -12,9 +12,9 @@ db.execute('PRAGMA foreign_keys = ON')
 try:
     if payload.get('migration'):
         db.execute('CREATE TABLE IF NOT EXISTS local_migrations (name TEXT PRIMARY KEY)')
-        if not db.execute('SELECT 1 FROM local_migrations WHERE name = ?', ('0000_leaderboards',)).fetchone():
+        if not db.execute('SELECT 1 FROM local_migrations WHERE name = ?', (payload.get('migrationName', '0000_leaderboards'),)).fetchone():
             db.executescript(payload['migration'])
-            db.execute('INSERT INTO local_migrations VALUES (?)', ('0000_leaderboards',))
+            db.execute('INSERT INTO local_migrations VALUES (?)', (payload.get('migrationName', '0000_leaderboards'),))
     rows = []
     for statement in payload.get('statements', []):
         cursor = db.execute(statement['sql'], statement['values'])
