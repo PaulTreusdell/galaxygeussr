@@ -49,9 +49,22 @@ const server = createServer(async (req, res) => {
     try { data = readFileSync(file) } catch { res.writeHead(404); res.end('Not found'); return }
     res.setHeader('Content-Type', mime[extname(file)] || 'application/octet-stream')
     res.setHeader('Cache-Control', url.pathname.startsWith('/assets/') ? 'public, max-age=31536000, immutable' : 'no-cache')
+    res.setHeader('Accept-Ranges', 'bytes')
+    const range = req.method === 'GET' && !req.headers['if-range'] ? req.headers.range : undefined
+    if (range && /^bytes=\d*-\d*$/.test(range)) {
+      const [first, last] = range.slice(6).split('-')
+      const start = first ? Number(first) : Math.max(0, data.length - Number(last))
+      const end = first ? (last ? Math.min(Number(last), data.length - 1) : data.length - 1) : data.length - 1
+      if ((!first && !last) || !Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start >= data.length || start > end) {
+        res.writeHead(416, { 'Content-Range': `bytes */${data.length}`, 'Content-Length': '0' }); res.end(); return
+      }
+      res.writeHead(206, { 'Content-Range': `bytes ${start}-${end}/${data.length}`, 'Content-Length': String(end - start + 1) })
+      res.end(data.subarray(start, end + 1)); return
+    }
+    res.setHeader('Content-Length', String(data.length))
     res.end(req.method === 'HEAD' ? undefined : data)
   } catch (e) { console.error('Request failed:', e.message); if (!res.headersSent) res.writeHead(500); res.end('Request failed') }
 })
 server.requestTimeout = 15000
-server.listen(Number(process.env.PORT || 3000), process.env.HOST || '127.0.0.1', () => console.log('GalaxyGuessr listening on port ' + (process.env.PORT || 3000)))
+server.listen(Number(process.env.PORT || 3000), process.env.HOST || '127.0.0.1', () => console.log('GalaxyGuessr listening on port ' + server.address().port))
 for (const signal of ['SIGINT','SIGTERM']) process.on(signal, () => server.close(() => { sqlite.close(); process.exit(0) }))
