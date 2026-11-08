@@ -20,6 +20,6 @@ export default function ExpeditionPicker({ category, onCategory, onStart, launch
       {category === 'all' && <p>Five categories per mission, drawn from all seven.</p>}</div>
       <button className="button button-primary" onClick={onStart} disabled={launching}>{launching ? <LoaderCircle className="spin" size={18} /> : <Rocket size={18} />}{launching ? 'Preparing expedition…' : 'Launch expedition'}<ArrowRight size={18} /></button>
     </section>
-    <div className="expedition-links"><button className="text-button" onClick={onExplore}><BookOpen size={16} /> Browse the field guide</button><button className="text-button" onClick={onLeaderboard}><Trophy size={16} /> View leaderboards</button></div>
+    <p className="expedition-map-intro">Every mission uses the star atlas. Pan across galaxies, zoom into star systems, and place your guess on a planet, moon, star, or distant galaxy.</p><div className="expedition-links"><button className="text-button" onClick={onExplore}><BookOpen size={16} /> Browse the field guide</button><button className="text-button" onClick={onLeaderboard}><Trophy size={16} /> View leaderboards</button></div>
   </main>
 }

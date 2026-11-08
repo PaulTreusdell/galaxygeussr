@@ -35,9 +35,6 @@ export function createMission(category: CategoryId = 'all', random = Math.random
   }
   return shuffle(locationsFor(category), random).slice(0, 5)
 }
-export function createChoices(world: Location, category: CategoryId, random = Math.random): Location[] {
-  return shuffle([world, ...shuffle(locationsFor(category).filter(w => w.id !== world.id), random).slice(0, 5)], random)
-}
 export function scoreRound(correct: boolean, hints: number, seconds: number): number {
   if (!correct) return 0
   const timePenalty = Math.min(1000, Math.max(0, Math.floor(seconds) - 30) * 5)
