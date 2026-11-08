@@ -10,3 +10,5 @@
 /* Give the Milky Way arms more vertical room without changing pin coordinates. */
 .galaxy-map[data-scene="milky-way"]:not(.atlas-expanded) .atlas-viewport{height:540px}
 @media(max-width:540px){.galaxy-map[data-scene="milky-way"]:not(.atlas-expanded) .atlas-viewport{height:460px}}
+
+.galaxy-map,.galaxy-map *{-webkit-user-select:none;user-select:none}.atlas-viewport img{-webkit-user-drag:none}

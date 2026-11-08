@@ -57,27 +57,22 @@ export default function GalaxyMap({ category, guess, onGuess, ready, answer }: {
   }, [expanded])
 
   const zoom = useCallback((factor: number, anchor = { x: 0, y: 0 }) => {
-    if (factor < 1 && camera.zoom * factor < .72 && scene.parent) { travel(scene.parent); return }
-    // Zooming deeply over a system carries you into its next level of detail.
-    if (factor > 1 && camera.zoom * factor > 2.9) {
-      const child = scene.nodes.find(n => n.enter && Math.hypot((n.x - 500) * scale + camera.x - anchor.x, (n.y - 325) * scale + camera.y - anchor.y) < 160)
-      if (child?.enter) { travel(child.enter); return }
-    }
     setCamera(c => zoomCamera(c, factor, anchor))
-  }, [camera, scale, scene, travel])
+  }, [])
   useEffect(() => {
     const el = viewport.current
     if (!el) return
     const wheel = (e: WheelEvent) => {
       e.preventDefault()
       const box = el.getBoundingClientRect()
-      zoom(Math.exp(-Math.max(-120, Math.min(120, e.deltaY)) * .003), { x: e.clientX - box.left - box.width / 2, y: e.clientY - box.top - box.height / 2 })
+      zoom(Math.exp(-Math.max(-60, Math.min(60, e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? box.height : 1))) * .0015), { x: e.clientX - box.left - box.width / 2, y: e.clientY - box.top - box.height / 2 })
     }
     el.addEventListener('wheel', wheel, { passive: false })
     return () => el.removeEventListener('wheel', wheel)
   }, [zoom])
   function startPointer(e: ReactPointerEvent<HTMLDivElement>) {
     if ((e.target as HTMLElement).closest('button') || (e.pointerType === 'mouse' && e.button !== 0)) return
+    e.preventDefault()
     e.currentTarget.focus({ preventScroll: true })
     e.currentTarget.setPointerCapture(e.pointerId)
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
@@ -92,8 +87,8 @@ export default function GalaxyMap({ category, guess, onGuess, ready, answer }: {
       const distance = Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y)
       const box = e.currentTarget.getBoundingClientRect()
       const anchor = { x: (points[0].x + points[1].x) / 2 - box.left - box.width / 2, y: (points[0].y + points[1].y) / 2 - box.top - box.height / 2 }
-      setCamera(zoomCamera(gesture.current.camera, distance / gesture.current.distance, anchor))
-    } else setCamera({ ...gesture.current.camera, x: gesture.current.camera.x + e.clientX - gesture.current.x, y: gesture.current.camera.y + e.clientY - gesture.current.y })
+      setCamera(zoomCamera(gesture.current.camera, Math.pow(distance / gesture.current.distance, .6), anchor))
+    } else setCamera({ ...gesture.current.camera, x: gesture.current.camera.x + (e.clientX - gesture.current.x) * .65, y: gesture.current.camera.y + (e.clientY - gesture.current.y) * .65 })
   }
   function endPointer(e: ReactPointerEvent<HTMLDivElement>) { pointers.current.delete(e.pointerId); gesture.current = null }
   function renderNode(node: AtlasNode) {
@@ -115,7 +110,7 @@ export default function GalaxyMap({ category, guess, onGuess, ready, answer }: {
         {(isGuess || isAnswer) && <span className="atlas-pin-label">{isAnswer ? 'CORRECT LOCATION' : 'YOUR GUESS'}</span>}
       </button>
       {node.enter && eligible && <button className="atlas-enter" onClick={() => travel(node.enter!)} aria-label={`Explore ${label} moons`}>Moons <ChevronRight size={10} /></button>}
-      {node.enter && !eligible && <span className="atlas-portal-hint">ZOOM IN <ArrowDownRight size={10} /></span>}
+      {node.enter && !eligible && <span className="atlas-portal-hint">EXPLORE <ArrowDownRight size={10} /></span>}
     </div>
   }
   const here = scene.nodes.some(n => n.id === guess)
@@ -124,21 +119,21 @@ export default function GalaxyMap({ category, guess, onGuess, ready, answer }: {
     <nav className="atlas-breadcrumbs" aria-label="Map location">{scenePath(sceneId).map((id, i) => <span key={id}>{i > 0 && <ChevronRight size={12} />}<button aria-current={id === sceneId ? 'location' : undefined} onClick={() => travel(id)}>{atlasScenes[id].name}</button></span>)}</nav>
     <div className="atlas-viewport" ref={viewport} tabIndex={0} role="region" aria-label={`${scene.name} map. Drag to pan. Scroll or use plus and minus to zoom. Use Tab to select destinations.`}
       onPointerDown={startPointer} onPointerMove={movePointer} onPointerUp={endPointer} onPointerCancel={endPointer} onLostPointerCapture={endPointer}
-      onDoubleClick={e => { if (!(e.target as HTMLElement).closest('button')) zoom(1.5, { x: e.clientX - e.currentTarget.getBoundingClientRect().left - size.width / 2, y: e.clientY - e.currentTarget.getBoundingClientRect().top - size.height / 2 }) }}
+      onDoubleClick={e => { if (!(e.target as HTMLElement).closest('button')) zoom(1.2, { x: e.clientX - e.currentTarget.getBoundingClientRect().left - size.width / 2, y: e.clientY - e.currentTarget.getBoundingClientRect().top - size.height / 2 }) }}
       onKeyDown={e => {
         if (e.target !== e.currentTarget) return
         if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '=', '-', '0', 'Backspace'].includes(e.key)) e.preventDefault()
-        if (e.key === '+' || e.key === '=') zoom(1.35)
-        if (e.key === '-') zoom(1 / 1.35)
+        if (e.key === '+' || e.key === '=') zoom(1.15)
+        if (e.key === '-') zoom(1 / 1.15)
         if (e.key === '0') setCamera(homeCamera)
         if (e.key === 'Backspace' && scene.parent) travel(scene.parent)
-        if (e.key.startsWith('Arrow')) setCamera(c => ({ ...c, x: c.x + (e.key === 'ArrowLeft' ? 55 : e.key === 'ArrowRight' ? -55 : 0), y: c.y + (e.key === 'ArrowUp' ? 55 : e.key === 'ArrowDown' ? -55 : 0) }))
+        if (e.key.startsWith('Arrow')) setCamera(c => ({ ...c, x: c.x + (e.key === 'ArrowLeft' ? 32 : e.key === 'ArrowRight' ? -32 : 0), y: c.y + (e.key === 'ArrowUp' ? 32 : e.key === 'ArrowDown' ? -32 : 0) }))
       }}>
       <div className="atlas-space" style={{ transform: `translate(${size.width / 2 + camera.x - 500 * scale}px, ${size.height / 2 + camera.y - 325 * scale}px) scale(${scale})` }}><Chart scene={scene} sceneId={sceneId} />{scene.nodes.map(renderNode)}
         {answer && guess !== answer && here && scene.nodes.some(n => n.id === answer) && <svg className="atlas-route" viewBox="0 0 1000 650" aria-hidden="true"><line x1={scene.nodes.find(n => n.id === guess)!.x} y1={scene.nodes.find(n => n.id === guess)!.y} x2={scene.nodes.find(n => n.id === answer)!.x} y2={scene.nodes.find(n => n.id === answer)!.y} stroke="#a8eed1" strokeWidth={1.5 / scale} strokeDasharray={`${5 / scale} ${5 / scale}`} /></svg>}
       </div>
     </div>
-    <div className="atlas-overlay"><div className="atlas-scene-title"><span>{scene.name.toUpperCase()}</span><small>{scene.subtitle}</small></div><div className="atlas-controls">{scene.parent && <button className="atlas-icon" onClick={() => travel(scene.parent!)} aria-label={`Zoom out to ${atlasScenes[scene.parent].name}`} title="Parent map"><ArrowLeft size={17} /></button>}<button className="atlas-icon" onClick={() => zoom(1.35)} aria-label="Zoom in"><Plus size={18} /></button><button className="atlas-icon" onClick={() => zoom(1 / 1.35)} aria-label="Zoom out"><Minus size={18} /></button><button className="atlas-icon" onClick={() => setCamera(homeCamera)} aria-label="Recenter map"><RotateCcw size={15} /></button></div></div>
+    <div className="atlas-overlay"><div className="atlas-scene-title"><span>{scene.name.toUpperCase()}</span><small>{scene.subtitle}</small></div><div className="atlas-controls">{scene.parent && <button className="atlas-icon" onClick={() => travel(scene.parent!)} aria-label={`Zoom out to ${atlasScenes[scene.parent].name}`} title="Parent map"><ArrowLeft size={17} /></button>}<button className="atlas-icon" onClick={() => zoom(1.15)} aria-label="Zoom in"><Plus size={18} /></button><button className="atlas-icon" onClick={() => zoom(1 / 1.15)} aria-label="Zoom out"><Minus size={18} /></button><button className="atlas-icon" onClick={() => setCamera(homeCamera)} aria-label="Recenter map"><RotateCcw size={15} /></button></div></div>
     <div className="atlas-bottom"><span>DRAG TO EXPLORE · SCROLL / PINCH TO ZOOM</span><span>{Math.round(camera.zoom * 100)}%</span></div>
     {answer && <div className="atlas-reveal-locations"><button onClick={() => travel(sceneForDestination(guess))}><MapPin size={13} /><span>Your guess<b>{selected?.name}</b></span></button><ChevronRight size={14} /><button onClick={() => travel(sceneForDestination(answer))}><Check size={14} /><span>Correct location<b>{locations.find(w => w.id === answer)?.name}</b></span></button></div>}
     <div className="atlas-selection" aria-live="polite">{selected ? <><span className={`selection-pin ${answer ? 'locked' : ''}`}><MapPin size={18} /></span><div><small>{answer ? 'YOUR LOCKED GUESS' : 'PIN PLACED'}</small><b>{selected.name}</b></div>{!here && <button className="text-button" onClick={() => travel(sceneForDestination(guess))}>Find pin <Crosshair size={14} /></button>}{!answer && <button className="atlas-icon" onClick={() => onGuess('')} aria-label="Clear guess"><X size={16} /></button>}</> : <><Crosshair size={20} /><div><b>Plot your guess on the map</b><small>{category === 'all' ? 'Explore a galaxy, then a star or planetary system.' : `${categories.find(c => c.id === category)?.name} mission · tap a destination to place your pin.`}</small></div></>}</div>
