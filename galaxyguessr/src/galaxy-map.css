@@ -6,3 +6,7 @@
 .expedition-map-intro{font-size:12px;line-height:1.8;color:#9cb4a6;max-width:650px;margin:22px auto 0;text-align:center}
 
 .atlas-reveal-locations{display:flex;align-items:center;gap:10px;border-top:1px solid #354a40;padding:11px 14px;background:#14221c}.atlas-reveal-locations>button{display:flex;align-items:center;gap:9px;flex:1;text-align:left;padding:7px 8px;border:1px solid #365342;border-radius:4px;min-width:0}.atlas-reveal-locations>button:hover{background:#254333}.atlas-reveal-locations>button:first-child{color:#f4c583}.atlas-reveal-locations>button:last-child{color:#a8eed1}.atlas-reveal-locations span{font-size:7px;line-height:1.5;display:flex;flex-direction:column;gap:3px}.atlas-reveal-locations b{font:500 10px var(--heading);color:#dceae2}.atlas-reveal-locations>svg{color:#6e8c7d}.atlas-reveal-locations button>svg{flex-shrink:0}
+
+/* Give the Milky Way arms more vertical room without changing pin coordinates. */
+.galaxy-map[data-scene="milky-way"]:not(.atlas-expanded) .atlas-viewport{height:540px}
+@media(max-width:540px){.galaxy-map[data-scene="milky-way"]:not(.atlas-expanded) .atlas-viewport{height:460px}}

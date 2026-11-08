@@ -8,10 +8,14 @@ import type { AtlasNode, MapCamera, SceneId } from './atlas'
 
 const stars = Array.from({ length: 150 }, (_, i) => ({ x: (i * 137.51) % 1000, y: (i * 73.79) % 650, r: i % 9 === 0 ? 1.5 : .7 }))
 
+const milkyWayStars = Array.from({ length: 400 }, (_, i) => ({ x: (i * 137.51) % 1600 - 300, y: (i * 73.79) % 1250 - 300, r: i % 9 === 0 ? 1.5 : .7 }))
+
 function Chart({ scene, sceneId }: { scene: typeof atlasScenes[SceneId]; sceneId: SceneId }) {
-  return <svg className="atlas-chart" viewBox="0 0 1000 650" aria-hidden="true">
+  const galaxy = scene.kind === 'galaxy'
+  // Keep the map coordinates unchanged while extending the artwork beyond its old crop.
+  return <svg className="atlas-chart" viewBox={galaxy ? '-300 -300 1600 1250' : '0 0 1000 650'} style={galaxy ? { left: -300, top: -300, width: 1600, height: 1250 } : undefined} aria-hidden="true">
     <defs><radialGradient id="galaxy-cloud"><stop stopColor="#e9dfbe" stopOpacity=".27" /><stop offset=".25" stopColor="#9cbbd2" stopOpacity=".13" /><stop offset="1" stopColor="#8ba7bb" stopOpacity="0" /></radialGradient></defs>
-    {stars.map((s, i) => <circle key={i} cx={s.x} cy={s.y} r={s.r} fill={i % 3 ? '#adbfcd' : '#eef4ed'} opacity={i % 4 === 0 ? .7 : .28} />)}
+    {(galaxy ? milkyWayStars : stars).map((s, i) => <circle key={i} cx={s.x} cy={s.y} r={s.r} fill={i % 3 ? '#adbfcd' : '#eef4ed'} opacity={i % 4 === 0 ? .7 : .28} />)}
     <path d="M0 325H1000M500 0V650" stroke="#aec8c9" strokeOpacity=".055" strokeDasharray="4 8" />
     {scene.kind === 'galaxy' && <g transform="translate(500 320) rotate(-24)"><ellipse rx="390" ry="240" fill="url(#galaxy-cloud)" />{[0, 90, 180, 270].map(deg => <g key={deg} transform={`rotate(${deg})`}><path d="M0 0C-110-150 120-245 265-95S360 160 190 190" fill="none" stroke="#a4c4d7" strokeOpacity=".08" strokeWidth="45" /><path d="M0 0C-110-150 120-245 265-95S360 160 190 190" fill="none" stroke="#afcbdc" strokeOpacity=".18" strokeWidth="2" /></g>)}<circle r="37" fill="url(#galaxy-cloud)" /></g>}
     {scene.kind === 'system' && <g transform={`translate(${sceneId === 'solar-system' ? 500 : 450} 320)`}>{(sceneId === 'solar-system' ? [78, 120, 165, 215, 275, 345, 425] : [120, 230, 330]).map(r => <ellipse key={r} rx={r} ry={r * .7} fill="none" stroke="#a3c9c6" strokeOpacity=".12" />)}{sceneId === 'solar-system' && <ellipse rx="236" ry="168" fill="none" stroke="#a8b4a2" strokeOpacity=".12" strokeWidth="20" strokeDasharray="1 6" />}</g>}
@@ -115,7 +119,7 @@ export default function GalaxyMap({ category, guess, onGuess, ready, answer }: {
     </div>
   }
   const here = scene.nodes.some(n => n.id === guess)
-  return <section className={`galaxy-map ${expanded ? 'atlas-expanded' : ''}`} aria-label="Galaxy guessing map">
+  return <section className={`galaxy-map ${expanded ? 'atlas-expanded' : ''}`} data-scene={sceneId} aria-label="Galaxy guessing map">
     <div className="atlas-heading"><div><span className="eyebrow"><span className="live-dot" /> INTERACTIVE STAR ATLAS</span><h2>{answer ? 'Your discovery, mapped.' : 'Find your place.'}</h2></div><button className="atlas-icon" onClick={() => setExpanded(e => !e)} aria-label={expanded ? 'Collapse map' : 'Expand map'}>{expanded ? <Shrink size={17} /> : <Expand size={17} />}</button></div>
     <nav className="atlas-breadcrumbs" aria-label="Map location">{scenePath(sceneId).map((id, i) => <span key={id}>{i > 0 && <ChevronRight size={12} />}<button aria-current={id === sceneId ? 'location' : undefined} onClick={() => travel(id)}>{atlasScenes[id].name}</button></span>)}</nav>
     <div className="atlas-viewport" ref={viewport} tabIndex={0} role="region" aria-label={`${scene.name} map. Drag to pan. Scroll or use plus and minus to zoom. Use Tab to select destinations.`}
